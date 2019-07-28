@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', serif;
+    color: #000000;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-image: linear-gradient(260deg, #4d729b 0%, #6a6a94 100%);
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: #d6d6d6;
+    box-sizing: border-box;
+    border: 2px solid rgb(156, 156, 156);
+}
+
+td {
+    border: 1px solid rgb(156, 156, 156);
+    padding: 5px;
+    text-align: center;
+    width: 60px;
+    height: 59px;
+    color: rgb(49, 47, 47);
+    cursor: pointer;
+}
+
+.btn_month:focus,
+.btn_year:focus {
+    outline: none;
+}
+
+#Pmonth,
+#Nmonth {
+    background-color: rgb(233, 230, 230);
+    color: #000000;
+}
+
+.highlight {
+    background-color: #ae2a0c!important;
+    color: white!important;
+}
+
+.hoverCell {
+    background-color: #ae2a0c!important;
+}
+
+header {
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 900px;
+    background-color: rgba(172, 45, 45, 0.842);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#fieldMonth,
+#fieldYear {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#fieldYear {
+    margin-left: -20px;
+}
+
+#createCalend,
+#removeCalend {
+    flex: 0 1 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background-color: #434388;
+    font-size: 16px;
+    padding: 10px;
+    border: 0;
+    border-radius: 15px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    align-self: center;
+    transition: all .3s ease-in-out;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+#removeCalend {
+    margin-right: 50px;
+}
+
+#createCalend:hover,
+#removeCalend:hover {
+    background-color: #1f1f81;
+}
+
+.disabled {
+    background-color: rgb(143, 142, 187)!important;
+}
+
+label {
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.select-field {
+    width: 135px;
+    height: 25px;
+}
+
+.select-field:focus {
+    outline: none;
+}
+
+.btn_month {
+    width: 34px;
+    height: 25px;
+    background-color: #f8f5f5;
+    color: #000;
+    margin-top: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn_year {
+    width: 45px;
+    height: 25px;
+    border-radius: 7px;
+    background-color: #f8f5f5;
+    color: #000;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#descripMonth {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#descripYear {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#display_month {
+    width: 182px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+#weekend {
+    background-color: #4e4c4ce7;
+    color: #ffffff;
+}
+
+#panel {
+    background-color: #ae2a0c;
+}
